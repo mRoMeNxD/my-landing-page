@@ -120,20 +120,20 @@ export const defaultProfile: ProfileConfig = {
   socials: [
     {
       name: "Instagram",
-      handle: "mR_oMeNxD",
-      url: "https://instagram.com/mR_oMeNxD",
+      handle: "ziteenn",
+      url: "https://instagram.com/ziteenn",
       icon: "instagram",
     },
     {
       name: "GitHub",
-      handle: "mR-oMeNxD",
-      url: "https://github.com/mR-oMeNxD",
+      handle: "mR_oMeNxD",
+      url: "https://github.com/mR_oMeNxD",
       icon: "github",
     },
     {
       name: "Telegram",
-      handle: "@mR_oMeNxD",
-      url: "https://t.me/mR_oMeNxD",
+      handle: "@ziteen",
+      url: "https://t.me/ziteen",
       icon: "telegram",
     },
   ],
