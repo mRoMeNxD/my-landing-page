@@ -108,19 +108,19 @@ export const SocialLinks = memo(function SocialLinks({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${item.name} profile`}
-          className="group relative inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-4.5 rounded-full bg-[#1A1815]/75 hover:bg-[#25221D]/90 border border-[#35312A]/80 hover:border-[#5C5548] text-[#D4CEC2] hover:text-[#FFFFFF] transition-all duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0 shadow-[0_4px_16px_rgba(0,0,0,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D8D4C8] select-none"
+          className="group relative inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-4.5 rounded-full bg-[rgba(20,20,20,0.22)] hover:bg-[rgba(20,20,20,0.36)] border border-white/[0.14] hover:border-white/[0.28] text-[#F3EFE6] hover:text-white transition-all duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] shadow-[0_4px_16px_rgba(0,0,0,0.2),_inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-[12px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 select-none"
         >
-          {/* Subtle accent hover indicator */}
+          {/* Subtle accent hover glow */}
           <span
             className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-15 pointer-events-none"
             style={{ backgroundColor: accent }}
           />
 
-          <span className="relative flex items-center justify-center w-4 h-4 text-[#A8A295] group-hover:text-white transition-colors duration-200">
+          <span className="relative flex items-center justify-center w-4 h-4 text-[#D4CEC2] group-hover:text-white transition-colors duration-200">
             <SocialIcon icon={item.icon} />
           </span>
 
-          <span className="relative text-xs sm:text-[13px] font-medium tracking-tight leading-none ml-2">
+          <span className="relative text-xs sm:text-[13px] font-medium tracking-tight leading-none ml-2 text-[#F3EFE6] group-hover:text-white transition-colors duration-200">
             {item.name}
           </span>
         </a>
@@ -128,3 +128,4 @@ export const SocialLinks = memo(function SocialLinks({
     </nav>
   );
 });
+

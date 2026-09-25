@@ -1,7 +1,6 @@
 "use client";
 
 import React, { memo } from "react";
-import Link from "next/link";
 import { ProfileConfig } from "@/lib/profile";
 import { BackgroundMedia } from "./BackgroundMedia";
 import { TVGridOverlay } from "./TVGridOverlay";
@@ -56,29 +55,8 @@ export const IdentityScene = memo(function IdentityScene({
         </div>
       </main>
 
-      {/* 4. MINIMAL BALANCED FOOTER (No Copyright, Centered Legal Links) */}
-      <footer className="relative z-20 w-full max-w-lg mx-auto px-6 pb-6 sm:pb-8 flex items-center justify-center text-center select-none animate-fade-in">
-        <nav
-          className="flex items-center justify-center gap-3 text-[11px] sm:text-xs text-[#8C867B] font-medium tracking-wide"
-          aria-label="Legal navigation"
-        >
-          <Link
-            href="/privacy"
-            className="hover:text-[#D4CFC4] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#D8D4C8] py-1 px-1.5 rounded"
-          >
-            Privacy Policy
-          </Link>
-          <span className="text-[#4A453C] select-none" aria-hidden="true">
-            &middot;
-          </span>
-          <Link
-            href="/terms"
-            className="hover:text-[#D4CFC4] transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#D8D4C8] py-1 px-1.5 rounded"
-          >
-            Terms of Service
-          </Link>
-        </nav>
-      </footer>
+      {/* Bottom spacing / structural balance bar */}
+      <div className="relative z-10 w-full pb-8 sm:pb-12 pointer-events-none" />
     </div>
   );
 });
